@@ -1,7 +1,7 @@
 import telebot, time, os, vt
 
-Token = '6323127820:AAG4yc5JAgsYyZxACM3avZdUVJ96DLunsNo'
-vt_api_key = '9cfa879a519e22fdfd9206ee9b93b09930c028e9d57b912afab3c876fa763c5d'
+Token = '<Tu Token>'
+vt_api_key = '<tu token>'
 
 bot = telebot.TeleBot(Token)
 
@@ -62,8 +62,8 @@ def send_help(message):
 # -------Mensaje diario (necesario el chat-id)
 print('diario')
 
-# chat_id = "-1001813797388" # El identificador del chat al que quieres enviar el mensaje
-chat_id = '-1001752772084'
+chat_id = "<tu chat id>" # El identificador del chat al que quieres enviar el mensaje
+
 
 def enviar_mensaje_diario():
     # Aquí puedes definir el mensaje que deseas enviar
