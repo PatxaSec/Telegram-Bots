@@ -1,7 +1,7 @@
 import telebot
 
 # Token del bot de Telegram
-TOKEN = '6380866038:AAEX-uHUc_8konAZGR55I4aF7d6Jjnq1LyM'
+TOKEN = '<tu token>'
 
 # Crear instancia del bot
 bot = telebot.TeleBot(TOKEN)
