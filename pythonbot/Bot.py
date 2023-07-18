@@ -246,10 +246,34 @@ keywords = {
         'sqlinjection': 'La SQL Injection es una vulnerabilidad que permite la ejecución de comandos SQL no deseados en una aplicación web.'
         }
 
-    # Buscar palabras clave y enviar respuesta
-    for keyword, response in keywords.items():
-        if keyword in text:
-            return bot.reply_to(message, response)
+
+if text.startswith('/'):
+        # Comandos predefinidos
+        if text == '/start':
+            send_welcome(message)
+        elif text == '/ayuda':
+            send_help(message)
+        elif text == '/variable':
+            send_variable_info(message)
+        elif text == '/funcion':
+            send_function_info(message)
+        elif text == '/condicional':
+            send_conditional_info(message)
+        elif text == '/bucle':
+            send_loop_info(message)
+        elif text == '/excepcion':
+            send_exception_info(message)
+        elif text == '/operador':
+            send_operator_info(message)
+        elif text == '/string':
+            send_string_info(message)
+        else:
+            bot.reply_to(message, 'Comando no válido. Escribe /ayuda para ver los comandos disponibles.')
+ else:
+       # Buscar palabras clave y enviar respuesta
+     for keyword, response in keywords.items():
+         if keyword in text:
+             return bot.reply_to(message, response)
             
 
 
