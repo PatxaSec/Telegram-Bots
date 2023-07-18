@@ -217,7 +217,6 @@ def handle_message(message):
     text = message.text.lower()
 
     # Palabras clave y respuestas
-    keywords = {
         
 keywords = {
         'variable': 'Una variable en Python es un contenedor que almacena un valor.',
@@ -250,8 +249,8 @@ keywords = {
     # Buscar palabras clave y enviar respuesta
     for keyword, response in keywords.items():
         if keyword in text:
-            bot.reply_to(message, response)
-            return
+            return bot.reply_to(message, response)
+            
 
 
 # Iniciar el bot
