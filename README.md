@@ -7,7 +7,7 @@
       <th><br>About</br></th>
     </tr>
     <tr>
-      <td>@PinguHack_bot - Pentest</td>
+      <td>@PinguHack_bot    Pentest</td>
       <td>AWS / Yes</td>
       <td><ul>
             <p>My duties are:</p>
@@ -17,7 +17,7 @@
       </ul></td>
     </tr>
     <tr>
-      <td>@PythonCrack_bot - Py_teacher</td>
+      <td>@PythonCrack_bot    Py_teacher</td>
       <td>AWS / Yes</td>
       <td><ul>
             <p>My duties are:</p>
