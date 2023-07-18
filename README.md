@@ -7,7 +7,7 @@
       <th><br>About</br></th>
     </tr>
     <tr>
-      <td>@PinguHack_bot / Pentest</td>
+      <td>@PinguHack_bot - Pentest</td>
       <td>AWS / Yes</td>
       <td><ul>
             <p>My duties are:</p>
@@ -17,9 +17,12 @@
       </ul></td>
     </tr>
     <tr>
-      <td>Fila 2, Celda 1</td>
-      <td>Fila 2, Celda 2</td>
-      <td>Fila 2, Celda 3</td>
+      <td>@PythonCrack_bot - Py_teacher</td>
+      <td>AWS / Yes</td>
+      <td><ul>
+            <p>My duties are:</p>
+            <li>To help users of a group, learn Python basics. All via commands and by examples.</li>
+      </ul></td>
     </tr>
   </table>
 
