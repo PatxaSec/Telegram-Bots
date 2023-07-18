@@ -12,12 +12,12 @@ def send_welcome(message):
     bot.reply_to(message, '¡Hola! Bienvenido al bot de Python. ¿En qué puedo ayudarte?')
 
 # Comando /ayuda
-@bot.message_handler(commands=['ayuda', 'help'])
+@bot.message_handler(commands=['ayuda'])
 def send_help(message):
     response = '''
     Puedes hacerme preguntas sobre Python o usar los siguientes comandos:
 
-    - /ayuda, /help: Muestra esta ayuda.
+    - /ayuda: Muestra esta ayuda.
     - /variable: Información sobre variables en Python.
     - /funcion: Información sobre funciones en Python.
     - /condicional: Información sobre condicionales en Python.
@@ -218,11 +218,34 @@ def handle_message(message):
 
     # Palabras clave y respuestas
     keywords = {
+        
+keywords = {
         'variable': 'Una variable en Python es un contenedor que almacena un valor.',
         'funcion': 'Una función en Python es un bloque de código reutilizable que realiza una tarea específica.',
         'condicional': 'Un condicional en Python permite ejecutar diferentes bloques de código según una condición.',
         'bucle': 'Un bucle en Python se utiliza para repetir un bloque de código varias veces.',
-    }
+        'excepcion': 'Una excepción en Python maneja errores y situaciones excepcionales.',
+        'operador': 'Los operadores en Python se utilizan para realizar operaciones en variables y valores.',
+        'string': 'En Python, existen cuatro maneras de incluir variables dentro de un string:',
+        
+'python': 'Python es un lenguaje de programación de alto nivel y fácil de aprender.',
+        'pentesting': 'El pentesting (pruebas de penetración) es el proceso de evaluar la seguridad de un sistema informático mediante la simulación de ataques.',
+        'scripting': 'El scripting se refiere a la creación de scripts o programas pequeños para automatizar tareas o realizar operaciones específicas.',
+        'django': 'Django es un framework web de Python que facilita el desarrollo rápido y seguro de aplicaciones web.',
+        'flask': 'Flask es un framework web minimalista de Python que permite construir aplicaciones web de forma sencilla y rápida.',
+        'sqlalchemy': 'SQLAlchemy es una biblioteca de Python que proporciona una forma flexible de trabajar con bases de datos relacionales.',
+        'beautifulsoup': 'Beautiful Soup es una biblioteca de Python para extraer datos de HTML y XML.',
+        'requests': 'Requests es una biblioteca de Python utilizada para realizar solicitudes HTTP.',
+        'scrapy': 'Scrapy es un framework de Python utilizado para el scraping y extracción de datos de sitios web.',
+        'sockets': 'Los sockets en Python permiten la comunicación entre procesos a través de la red utilizando protocolos como TCP o UDP.',
+        'ssh': 'SSH (Secure Shell) es un protocolo de red utilizado para acceder de forma segura a servidores remotos.',
+        'cifrado': 'El cifrado es el proceso de convertir datos legibles en una forma ininteligible para proteger su confidencialidad.',
+        'hashing': 'El hashing es el proceso de transformar datos en una cadena de caracteres de longitud fija utilizando una función hash.',
+        'bruteforce': 'El bruteforce es un método de prueba utilizado para descifrar contraseñas probando todas las posibles combinaciones.',
+        'xss': 'XSS (Cross-Site Scripting) es una vulnerabilidad web que permite la ejecución de código malicioso en un sitio web.',
+        'csrf': 'CSRF (Cross-Site Request Forgery) es un tipo de ataque que aprovecha la confianza del navegador del usuario para realizar acciones no deseadas.',
+        'sqlinjection': 'La SQL Injection es una vulnerabilidad que permite la ejecución de comandos SQL no deseados en una aplicación web.'
+        }
 
     # Buscar palabras clave y enviar respuesta
     for keyword, response in keywords.items():
