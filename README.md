@@ -8,7 +8,7 @@
     </tr>
     <tr>
       <td>@PinguHack_bot (Pentest)</td>
-      <td>AWS / Yes</td>
+      <td>AWS / No</td>
       <td><ul>
             <p>My duties are:</p>
             <li>To give a warm wellcome.</li>
@@ -18,7 +18,7 @@
     </tr>
     <tr>
       <td>@PythonCrack_bot (Py_teacher)</td>
-      <td>AWS / Yes</td>
+      <td>AWS / No</td>
       <td><ul>
             <p>My duties are:</p>
             <li>To help users of a group, learn Python basics. All via commands and by examples.</li>
